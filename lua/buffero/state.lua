@@ -1,12 +1,11 @@
 local M = {}
 
 local state = {
-  closed = {}
+	closed = {},
 }
 
 return setmetatable(M, {
-  __index = function(_, k)
-    return state[k]
-  end,
+	__index = function(_, k)
+		return state[k]
+	end,
 })
-
