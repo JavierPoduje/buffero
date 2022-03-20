@@ -9,20 +9,39 @@
     l_____j \__,_jl__j   l__j   l_____jl__j\_j \___/
 
 
-#### Useful commands for buffer manipulation
+#### Open recently closed buffers, just like in your web browser.
 
 </div>
 
-# WIP
-
 ## Dependencies
 
-TODO:...
+- neovim 0.7.0+ required
 
-## Available commands
+## Install
 
-TODO:...
+* vim-plug
+```vim
+Plug 'JavierPoduje/buffero'
+```
+
+* packer.nvim
+```vim
+use("JavierPoduje/buffero")
+```
 
 ## Configuration
 
-TODO:...
+* Require
+```vim
+require('buffero')
+```
+
+* Use
+```vim
+vim.api.nvim_set_keymap(
+	'n',
+	'<Leader>bl',
+	':lua require("buffero").open_last_closed_buffer()<CR>',
+	{ noremap = true, silent = true }
+)
+```
