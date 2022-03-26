@@ -1,4 +1,5 @@
 require("buffero.groups")
+
 local S = require("buffero.state")
 
 local M = {}
