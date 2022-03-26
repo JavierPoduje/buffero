@@ -5,7 +5,8 @@
 
 </div>
 
-![Buffero](buffero.mp4)
+https://user-images.githubusercontent.com/32601980/160250812-05870800-05b0-47e8-bd14-cade33dca841.mp4
+
 
 ## Dependencies
 
