@@ -8,7 +8,8 @@ local M = {}
 -- If no buffer was closed, prints the message "no buffer to open...".
 -- @return void
 M.open_last_closed_buffer = function()
-	if #S.closed == 0 then
+	if #S.closed == 0 or (#S.closed == 1 and S.closed[1] == "") then
+		S.closed = {}
 		print("no buffer to open...")
 		return
 	end
